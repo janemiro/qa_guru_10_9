@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class DemoQaFormTest extends TestBase {
 
-
     String url = "https://demoqa.com/automation-practice-form",
             name = "Jee",
             lastName = "Doe",
@@ -53,7 +52,6 @@ public class DemoQaFormTest extends TestBase {
         $("#subjectsInput").setValue(subject1).pressEnter();
         $("#subjectsInput").setValue(subject2).pressEnter();
         $("#hobbiesWrapper").findElement(byText(hobby)).click();
-
 
         // Upload picture
         //  $("#uploadPicture").uploadFromClasspath(path);
