@@ -71,10 +71,10 @@ public class DemoQaFormTest extends TestBase {
         $("#submit").click();
 
         // Check the final form
-        $(".table-responsive").shouldHave(text(name), /*text(lastName), text(email), text(gender), text(mobile),
+        $(".table-responsive").shouldHave(text(name), text(lastName), text(email), text(gender), text(mobile),
                 text(month), text(year), text(day),
                 text(subject1), text(subject2), text(hobby),
-                text(picture), text(address), text(state),*/ text(city));
+                text(picture), text(address), text(state), text(city));
     }
 
 
