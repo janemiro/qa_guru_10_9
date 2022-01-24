@@ -1,11 +1,9 @@
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-
 
 
 public class DemoQaFormTest extends TestBase {
@@ -58,7 +56,7 @@ public class DemoQaFormTest extends TestBase {
 
 
         // Upload picture
-      //  $("#uploadPicture").uploadFromClasspath(path);
+        //  $("#uploadPicture").uploadFromClasspath(path);
 
         // Set address, state and city info
         $("#currentAddress").setValue(address);
