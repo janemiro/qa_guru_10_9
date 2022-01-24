@@ -8,11 +8,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 
 
-public class DemoQaFormTest {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "2560x1440";
-    }
+public class DemoQaFormTest extends TestBase {
+
 
     String url = "https://demoqa.com/automation-practice-form",
             name = "Jee",
@@ -61,7 +58,7 @@ public class DemoQaFormTest {
 
 
         // Upload picture
-        $("#uploadPicture").uploadFromClasspath(path);
+      //  $("#uploadPicture").uploadFromClasspath(path);
 
         // Set address, state and city info
         $("#currentAddress").setValue(address);
@@ -79,7 +76,7 @@ public class DemoQaFormTest {
         $(".modal-open").shouldHave(text(name), text(lastName), text(email), text(gender), text(mobile),
                 text(month), text(year), text(day),
                 text(subject1), text(subject2), text(hobby),
-                text(picture), text(address), text(state), text(city));
+                /*text(picture),*/ text(address), text(state), text(city));
     }
 
 
